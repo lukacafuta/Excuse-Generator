@@ -5,4 +5,12 @@ export const HomeStyled = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 1200px;
+`
+
+export const HeaderStyled = styled.header`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 `
