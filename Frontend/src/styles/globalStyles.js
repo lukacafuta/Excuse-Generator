@@ -13,4 +13,11 @@ export const HeaderStyled = styled.header`
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+    }
 `
