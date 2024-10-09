@@ -14,3 +14,10 @@ export const HeaderStyled = styled.header`
     justify-content: space-between;
     width: 100%;
 `
+
+export const FooterStyled = styled.footer`
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+`
