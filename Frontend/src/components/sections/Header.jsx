@@ -4,7 +4,9 @@ export default function Header() {
     return (
         <HeaderStyled>
             <img src="/luca-logo.svg" alt="Luca logo"/>
-            <div>Navigation</div>
+            <div>EXCUSES</div>
+            <div>DOCUMENTATION</div>
+            <div>ABOUT ME</div>
             <img src="/github-logo.svg" alt="Github logo"/>
         </HeaderStyled>
     )
