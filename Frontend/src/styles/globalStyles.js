@@ -18,6 +18,13 @@ export const HeaderStyled = styled.header`
 export const FooterStyled = styled.footer`
     display: flex;
     justify-content: center;
-    gap: 2rem;
     width: 100%;
+`
+
+export const StackRectangleStyled = styled.footer`
+    display: flex;
+    gap: 2rem;
+    background-color: gray;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
 `
