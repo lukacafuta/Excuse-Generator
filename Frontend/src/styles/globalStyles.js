@@ -22,6 +22,10 @@ export const HeaderStyled = styled.header`
     }
 `
 
+export const HeroSectionStyled = styled.section`
+    display: flex;
+`
+
 export const FooterStyled = styled.footer`
     display: flex;
     justify-content: center;
