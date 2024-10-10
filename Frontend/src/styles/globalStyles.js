@@ -31,6 +31,12 @@ export const HeroSectionStyled = styled.section`
     padding-top: 8rem;
     padding-bottom: 22rem;
 
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     h1 {
         padding-bottom: 0rem;
     }
