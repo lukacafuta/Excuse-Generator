@@ -22,6 +22,33 @@ export const HeaderStyled = styled.header`
     }
 `
 
+export const HeroSectionStyled = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+
+    h1 {
+        padding-bottom: 0rem;
+    }
+
+    h2 {
+        padding-bottom: 1.5rem;
+    }
+
+    button {
+        padding: 10px 56px;
+        background-color: #64DBDB;
+        border-radius: 8px;
+        color: black;
+        font-size: 0.8rem;
+    }
+`
+
+
 export const FooterStyled = styled.footer`
     display: flex;
     justify-content: center;
