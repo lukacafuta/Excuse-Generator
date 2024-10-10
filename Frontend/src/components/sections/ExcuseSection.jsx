@@ -1,7 +1,10 @@
+import {ExcuseSectionStyled} from "../../styles/globalStyles.js";
+
 export default function ExcuseSection() {
     return (
-        <div>
+        <ExcuseSectionStyled>
             Excuse Section
-        </div>
+            <button>New Excuse</button>
+        </ExcuseSectionStyled>
     )
 }

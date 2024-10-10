@@ -29,7 +29,7 @@ export const HeroSectionStyled = styled.section`
     align-items: center;
     width: 100%;
     padding-top: 8rem;
-    padding-bottom: 4rem;
+    padding-bottom: 22rem;
 
     h1 {
         padding-bottom: 0rem;
@@ -48,6 +48,30 @@ export const HeroSectionStyled = styled.section`
     }
 `
 
+export const ExcuseSectionStyled = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 15.5rem;
+`
+
+export const EndpointSectionStyled = styled.section`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 15.5rem;
+`
+
+export const AboutMeSectionStyled = styled.section`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 15rem;
+`
 
 export const FooterStyled = styled.footer`
     display: flex;
