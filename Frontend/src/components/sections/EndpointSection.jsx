@@ -1,7 +1,9 @@
+import {EndpointSectionStyled} from "../../styles/globalStyles.js";
+
 export default function EndpointSection() {
     return (
-        <div>
+        <EndpointSectionStyled>
             Endpoint Section
-        </div>
+        </EndpointSectionStyled>
     )
 }
