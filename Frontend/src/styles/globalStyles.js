@@ -31,7 +31,7 @@ export const HeroSectionStyled = styled.section`
     align-items: center;
     width: 100%;
     padding-top: 8rem;
-    padding-bottom: 22rem;
+    padding-bottom: 1.5rem;
 
     .hero-content {
         display: flex;
@@ -68,6 +68,7 @@ export const ExcuseSectionStyled = styled.section`
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 2.5rem;
     }
 
     button {
