@@ -63,6 +63,20 @@ export const ExcuseSectionStyled = styled.section`
     align-items: center;
     width: 100%;
     padding-bottom: 15.5rem;
+
+    .excuse-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        padding: 10px 56px;
+        background-color: #64DBDB;
+        border-radius: 8px;
+        color: black;
+        font-size: 0.8rem;
+    }
 `
 
 export const EndpointSectionStyled = styled.section`
