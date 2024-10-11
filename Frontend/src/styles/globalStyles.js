@@ -54,6 +54,10 @@ export const HeroSectionStyled = styled.section`
         color: black;
         font-size: 0.8rem;
     }
+
+    img {
+        padding-top: 1.5rem;
+    }
 `
 
 export const ExcuseSectionStyled = styled.section`
@@ -63,12 +67,13 @@ export const ExcuseSectionStyled = styled.section`
     align-items: center;
     width: 100%;
     padding-bottom: 15.5rem;
+    padding-top: 2.5rem;
 
     .excuse-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2.5rem;
+        gap: 1rem;
     }
 
     button {
