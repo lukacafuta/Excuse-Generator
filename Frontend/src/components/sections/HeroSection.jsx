@@ -7,6 +7,7 @@ export default function HeroSection() {
                 <h1>Lets get Eaasy!</h1>   {/*in index css*/}
                 <h2>Excuse as a Service</h2>    {/*in index css*/}
                 <button>TRY IT</button>
+                <img src="/down-arrow.svg" alt="down-arrow"/>
             </div>
         </HeroSectionStyled>
     )
