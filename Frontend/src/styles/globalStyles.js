@@ -12,7 +12,9 @@ export const HeaderStyled = styled.header`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
+    padding-top: 3.5rem;
 
     .navbar {
         display: flex;
