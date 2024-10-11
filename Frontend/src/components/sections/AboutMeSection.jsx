@@ -1,7 +1,9 @@
+import {AboutMeSectionStyled} from "../../styles/globalStyles.js";
+
 export default function AboutMeSection() {
     return (
-        <div>
+        <AboutMeSectionStyled>
             About me section
-        </div>
+        </AboutMeSectionStyled>
     )
 }
