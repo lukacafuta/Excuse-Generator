@@ -95,10 +95,23 @@ export const EndpointSectionStyled = styled.section`
 
 export const AboutMeSectionStyled = styled.section`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding-bottom: 15rem;
+
+    .about-me-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    p {
+        width: 306px;
+        height: 272px;
+        top: 2138px;
+        left: 722px;
+    }
 `
 
 export const FooterStyled = styled.footer`
