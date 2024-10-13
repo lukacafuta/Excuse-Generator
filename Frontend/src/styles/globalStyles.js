@@ -112,6 +112,14 @@ export const AboutMeSectionStyled = styled.section`
         top: 2138px;
         left: 722px;
     }
+
+    .profile-photo {
+        width: 173px;
+        height: 173px;
+        border-radius: 12.5%;
+        object-fit: cover;
+        background-color: #64DBDB;
+    }
 `
 
 export const FooterStyled = styled.footer`
