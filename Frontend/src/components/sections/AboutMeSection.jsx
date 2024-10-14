@@ -6,7 +6,9 @@ export default function AboutMeSection() {
             <h2>About me</h2>
             <h3>Hi, I am Luka - a Full Stack Dev</h3>
             <div className="about-me-content">
-                <img className="profile-photo" src="/luka-profile-photo.png" alt="profile photo"/>
+                <div className="profile-photo-wrapper">
+                    <img className="profile-photo" src="/luka-profile-photo.png" alt="profile photo"/>
+                </div>
                 <div className="about-me-text-linkedin">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis hac dictum, vitae augue arcu
