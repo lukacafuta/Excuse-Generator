@@ -104,6 +104,7 @@ export const AboutMeSectionStyled = styled.section`
     .about-me-content {
         display: flex;
         flex-direction: row;
+        gap: 2.5rem;
     }
 
     p {
