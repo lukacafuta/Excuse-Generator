@@ -87,6 +87,7 @@ export const ExcuseSectionStyled = styled.section`
 
 export const EndpointSectionStyled = styled.section`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
