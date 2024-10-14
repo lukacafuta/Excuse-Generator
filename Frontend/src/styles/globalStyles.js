@@ -104,14 +104,15 @@ export const AboutMeSectionStyled = styled.section`
     .about-me-content {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: start;
         gap: 2.5rem;
     }
 
-    p {
-        width: 306px;
-        height: 272px;
-        top: 2138px;
-        left: 722px;
+    .profile-photo-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: start;
     }
 
     .profile-photo {
@@ -119,7 +120,19 @@ export const AboutMeSectionStyled = styled.section`
         height: 173px;
         border-radius: 12.5%;
         object-fit: cover;
-        background-color: #64DBDB;
+        background: linear-gradient(135deg, #64DBDB 0%, #69C5DB 50%, #4E64DB 100%);
+    }
+
+    .about-me-text-linkedin {
+        display: flex;
+        flex-direction: column;
+        //justify-content: center;
+        align-items: start;
+    }
+
+    p {
+        width: 306px;
+        height: 272px;
     }
 `
 
