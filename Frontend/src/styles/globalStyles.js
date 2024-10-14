@@ -95,10 +95,45 @@ export const EndpointSectionStyled = styled.section`
 
 export const AboutMeSectionStyled = styled.section`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding-bottom: 15rem;
+
+    .about-me-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        gap: 2.5rem;
+    }
+
+    .profile-photo-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .profile-photo {
+        width: 173px;
+        height: 173px;
+        border-radius: 12.5%;
+        object-fit: cover;
+        background: linear-gradient(135deg, #64DBDB 0%, #69C5DB 50%, #4E64DB 100%);
+    }
+
+    .about-me-text-linkedin {
+        display: flex;
+        flex-direction: column;
+        //justify-content: center;
+        align-items: start;
+    }
+
+    p {
+        width: 306px;
+        height: 272px;
+    }
 `
 
 export const FooterStyled = styled.footer`
