@@ -94,6 +94,10 @@ export const EndpointSectionStyled = styled.section`
     padding-bottom: 15.5rem;
 `
 
+export const TabContainerStyled = styled.div`
+    display: flex;
+`
+
 export const AboutMeSectionStyled = styled.section`
     display: flex;
     flex-direction: column;
