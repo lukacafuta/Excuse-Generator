@@ -87,10 +87,24 @@ export const ExcuseSectionStyled = styled.section`
 
 export const EndpointSectionStyled = styled.section`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding-bottom: 15.5rem;
+`
+
+export const TabContainerStyled = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+
+export const TabNavigationStyled = styled.div`
+    display: flex;
+`
+
+export const TabContentStyled = styled.div`
+    display: flex;
 `
 
 export const AboutMeSectionStyled = styled.section`
