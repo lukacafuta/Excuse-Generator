@@ -96,6 +96,15 @@ export const EndpointSectionStyled = styled.section`
 
 export const TabContainerStyled = styled.div`
     display: flex;
+    flex-direction: column;
+`
+
+export const TabNavigationStyled = styled.div`
+    display: flex;
+`
+
+export const TabContentStyled = styled.div`
+    display: flex;
 `
 
 export const AboutMeSectionStyled = styled.section`
