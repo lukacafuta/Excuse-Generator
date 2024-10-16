@@ -53,6 +53,7 @@ export const HeroSectionStyled = styled.section`
         border-radius: 8px;
         color: black;
         font-size: 0.8rem;
+        cursor: pointer;
     }
 
     img {
@@ -82,6 +83,7 @@ export const ExcuseSectionStyled = styled.section`
         border-radius: 8px;
         color: black;
         font-size: 0.8rem;
+        cursor: pointer;
     }
 `
 
@@ -91,7 +93,14 @@ export const EndpointSectionStyled = styled.section`
     justify-content: center;
     align-items: center;
     width: 100%;
+    gap: 1.5rem;
     padding-bottom: 15.5rem;
+
+    .endpoints-header {
+        h2 {
+            margin-bottom: 0.5rem;
+        }
+    }
 `
 
 export const TabContainerStyled = styled.div`
@@ -107,16 +116,31 @@ export const TabNavigationStyled = styled.div`
     .endpoints {
         display: flex;
         flex-direction: column;
+        gap: 0.5rem;
+
+        button {
+            cursor: pointer;
+            //outline: none;
+        }
     }
 `
 
 export const TabContentStyled = styled.div`
     display: flex;
     flex-direction: column;
+    min-width: 696px;
+    min-height: 340px;
+    border-radius: 12px;
+    border: 3px dashed #64DBDB;
+    padding: 1.5rem;
+    gap: 0.5rem;
 `
 
 export const TabDatabaseOutputStyled = styled.div`
     display: flex;
+    background: #2C2C35;
+    min-height: 277px;
+    padding: 2rem;
 `
 
 export const AboutMeSectionStyled = styled.section`
