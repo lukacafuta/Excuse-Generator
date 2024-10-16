@@ -197,6 +197,7 @@ export const FooterStyled = styled.footer`
     display: flex;
     justify-content: center;
     width: 100%;
+    padding-bottom: 2.5rem;
 `
 
 export const StackRectangleStyled = styled.footer`
