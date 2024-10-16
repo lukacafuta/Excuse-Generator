@@ -11,7 +11,7 @@ export default function AboutMeSection() {
                 </div>
                 <div className="about-me-text-linkedin">
                     <p>
-                        Experience in the healthcare sector, administrative skills, and a strong customer focus.<br/>
+                        Experienced in the healthcare sector, administrative skills, and a strong customer focus.<br/>
                         In addition to solid computer science and programming knowledge (JavaScript, Python, SQL), I
                         have extensive experience in customer service and organization.<br/>
                         I speak fluent German and English.

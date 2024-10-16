@@ -24,13 +24,20 @@
     /*Colors*/
     --color-turqoise: #64DBDB;
     --color-font-bright: #EAEAF4;
-    --color-background-dark: #2c2c2c;
+    --color-background-dark: #2C2C2C;
     --color-output-tab-grey: #2C2C35;
+    --gradient-background-turqoise: linear-gradient(169.5deg, rgba(217, 217, 217, 0.2) 9.18%, rgba(100, 219, 219, 0.2) 98.02%);
+
+
+    /*Borders*/
+    --dashed-border: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='5' ry='5' stroke='rgba(100, 219, 219, 1)' stroke-width='4' stroke-dasharray='10' stroke-dashoffset='40' stroke-linecap='round'/%3e%3c/svg%3e");
 
 
 }
 
 body {
+    display: flex;
+    justify-content: center;
     background-color: var(--color-background-dark);
     color: var(--color-font-bright);
     width: 100vw;
@@ -38,9 +45,20 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Nunito Sans", sans-serif;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
 
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-background-turqoise);
+    z-index: -1;
+    pointer-events: none;
 }
 
 h1 {
