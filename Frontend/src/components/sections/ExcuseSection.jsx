@@ -1,4 +1,4 @@
-import {ExcuseSectionStyled} from "../../styles/globalStyles.js";
+import {BigButtonStyled, ExcuseSectionStyled} from "../../styles/globalStyles.js";
 
 export default function ExcuseSection() {
     return (
@@ -6,7 +6,7 @@ export default function ExcuseSection() {
             <div className="excuse-content">
                 {/*<img src="/down-arrow.svg" alt="down-arrow"/> MOVED TO HERO*/}
                 <img src="/excuse.svg" alt="excuse"/>
-                <button>New Excuse</button>
+                <BigButtonStyled>New Excuse</BigButtonStyled>
             </div>
         </ExcuseSectionStyled>
     )
