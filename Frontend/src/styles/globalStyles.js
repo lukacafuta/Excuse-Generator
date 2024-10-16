@@ -124,7 +124,7 @@ export const TabContentStyled = styled.div`
     min-width: 696px;
     min-height: 340px;
     border-radius: 12px;
-    border: 3px dashed #64DBDB;
+    background-image: var(--dashed-border);
     padding: 1.5rem;
     gap: 0.5rem;
 `
