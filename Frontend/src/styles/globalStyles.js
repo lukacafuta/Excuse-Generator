@@ -96,14 +96,26 @@ export const EndpointSectionStyled = styled.section`
 
 export const TabContainerStyled = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 1.5rem;
 `
 
 export const TabNavigationStyled = styled.div`
     display: flex;
+    flex-direction: column;
+
+    .endpoints {
+        display: flex;
+        flex-direction: column;
+    }
 `
 
 export const TabContentStyled = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+
+export const TabDatabaseOutputStyled = styled.div`
     display: flex;
 `
 
