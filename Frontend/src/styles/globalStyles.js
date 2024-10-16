@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "../index.css";
 
 export const HomeStyled = styled.div`
     display: flex;
@@ -47,18 +48,18 @@ export const HeroSectionStyled = styled.section`
         padding-bottom: 1.5rem;
     }
 
-    button {
-        padding: 10px 56px;
-        background-color: #64DBDB;
-        border-radius: 8px;
-        color: black;
-        font-size: 0.8rem;
-        cursor: pointer;
-    }
-
     img {
         padding-top: 1.5rem;
     }
+`
+
+export const BigButtonStyled = styled.button`
+    padding: 10px 56px;
+    background-color: var(--color-turqoise);
+    border-radius: 8px;
+    color: black;
+    font-size: 0.8rem;
+    cursor: pointer;
 `
 
 export const ExcuseSectionStyled = styled.section`
@@ -77,14 +78,6 @@ export const ExcuseSectionStyled = styled.section`
         gap: 1rem;
     }
 
-    button {
-        padding: 10px 56px;
-        background-color: #64DBDB;
-        border-radius: 8px;
-        color: black;
-        font-size: 0.8rem;
-        cursor: pointer;
-    }
 `
 
 export const EndpointSectionStyled = styled.section`
@@ -138,7 +131,7 @@ export const TabContentStyled = styled.div`
 
 export const TabDatabaseOutputStyled = styled.div`
     display: flex;
-    background: #2C2C35;
+    background: var(--color-output-tab-grey);
     min-height: 277px;
     padding: 2rem;
 `
@@ -166,11 +159,25 @@ export const AboutMeSectionStyled = styled.section`
     }
 
     .profile-photo {
+        position: relative;
         width: 173px;
         height: 173px;
         border-radius: 12.5%;
         object-fit: cover;
-        background: linear-gradient(135deg, #64DBDB 0%, #69C5DB 50%, #4E64DB 100%);
+        background: linear-gradient(207.18deg, #64DBDB 7.12%, #69C5DB 45.08%, #4E64DB 83.04%);
+    }
+
+    .profile-photo::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 12.5%;
+        background: linear-gradient(207.18deg, #64DBDB 7.12%, #69C5DB 18.97%, #824EDB 83.04%);
+        mix-blend-mode: overlay;
+        pointer-events: none;
     }
 
     .about-me-text-linkedin {
