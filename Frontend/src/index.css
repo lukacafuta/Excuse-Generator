@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*standard css for browser*/
 
@@ -7,24 +8,63 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    max-width: 100%;
+}
+
+:root {
+    font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+
+    /*Colors*/
+    --color-turqoise: #64DBDB;
+    --color-font-bright: #EAEAF4;
+    --color-background-dark: #2C2C2C;
+    --color-output-tab-grey: #2C2C35;
+    --gradient-background-turqoise: linear-gradient(169.5deg, rgba(217, 217, 217, 0.2) 9.18%, rgba(100, 219, 219, 0.2) 98.02%);
+
+
+    /*Borders*/
+    --dashed-border: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='5' ry='5' stroke='rgba(100, 219, 219, 1)' stroke-width='4' stroke-dasharray='10' stroke-dashoffset='40' stroke-linecap='round'/%3e%3c/svg%3e");
+
+
 }
 
 body {
-    background-color: #2c2c2c;
-    color: #eaeaf4;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-background-dark);
+    color: var(--color-font-bright);
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
     font-family: "Nunito Sans", sans-serif;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
 
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-background-turqoise);
+    z-index: -1;
+    pointer-events: none;
 }
 
 h1 {
     font-size: 2.8rem;
     font-weight: 900;
+    color: var(--color-font-bright);
     text-align: center;
     margin: 0;
 }
@@ -32,7 +72,15 @@ h1 {
 h2 {
     font-size: 1.5rem;
     font-weight: 700;
+    color: var(--color-font-bright);
     text-align: center;
     margin: 0;
 }
 
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-font-bright);
+    text-align: center;
+    margin: 0;
+}
