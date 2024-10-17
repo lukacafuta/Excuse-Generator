@@ -16,6 +16,7 @@ export const HeaderStyled = styled.header`
     align-items: center;
     width: 100%;
     padding-top: 3.5rem;
+    
 
     .navbar {
         display: flex;
