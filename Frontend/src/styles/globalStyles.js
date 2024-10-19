@@ -87,12 +87,16 @@ export const ExcuseSectionStyled = styled.section`
     width: 100%;
     padding-bottom: 15.5rem;
     padding-top: 2.5rem;
+    gap: 1rem;
 
     .excuse-content {
         display: flex;
+        position: relative;
         flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+        width: 419px;
+        height: 393px;
+        border-radius: 17px;
+        background: var(--gradient-background-excuse);
     }
 
 `

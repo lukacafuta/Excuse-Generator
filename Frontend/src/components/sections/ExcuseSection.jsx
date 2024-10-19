@@ -4,10 +4,12 @@ export default function ExcuseSection() {
     return (
         <ExcuseSectionStyled>
             <div className="excuse-content">
-                {/*<img src="/down-arrow.svg" alt="down-arrow"/> MOVED TO HERO*/}
-                <img src="/excuse.svg" alt="excuse"/>
-                <BigButtonStyled>New Excuse🥸</BigButtonStyled>
+                <div className="category">School</div>
+                <div className="dummy-excuse">My dog ate my homework.</div>
+                <div className="emoji">🥸</div>
+                {/*<img src="/excuse.svg" alt="excuse"/>*/}
             </div>
+            <BigButtonStyled>New Excuse</BigButtonStyled>
         </ExcuseSectionStyled>
     )
 }
