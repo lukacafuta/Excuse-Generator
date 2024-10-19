@@ -108,7 +108,7 @@ export const ExcuseSectionStyled = styled.section`
         font-family: var(--font-family-poppins), system-ui, Avenir, Helvetica, Arial, sans-serif;
         font-size: 20px;
         font-weight: 600;
-        margin-bottom: 7rem;
+        margin-bottom: 7rem; // make it smaller to move excuses higher?
     }
 
     .dummy-excuse {
@@ -116,6 +116,10 @@ export const ExcuseSectionStyled = styled.section`
         font-family: var(--font-family-poppins), system-ui, Avenir, Helvetica, Arial, sans-serif;
         font-size: 28px;
         font-weight: 600;
+        overflow: hidden;
+        //word-wrap: break-word;
+        //overflow-wrap: break-word;
+        //word-break: break-word;
     }
 
     .emoji {
