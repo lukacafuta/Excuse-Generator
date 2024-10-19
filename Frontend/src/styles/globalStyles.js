@@ -87,14 +87,49 @@ export const ExcuseSectionStyled = styled.section`
     width: 100%;
     padding-bottom: 15.5rem;
     padding-top: 2.5rem;
+    gap: 1rem;
 
     .excuse-content {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+        //justify-content: space-between;
+        align-items: flex-start;
+        width: 419px;
+        height: 393px;
+        border-radius: 17px;
+        padding: 3rem;
+        position: relative;
+        background: var(--gradient-background-excuse);
     }
 
+    .category {
+        display: flex;
+        justify-content: flex-start;
+        font-family: var(--font-family-poppins), system-ui, Avenir, Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 7rem; // make it smaller to move excuses higher?
+    }
+
+    .dummy-excuse {
+        display: flex;
+        font-family: var(--font-family-poppins), system-ui, Avenir, Helvetica, Arial, sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        overflow: hidden;
+        //word-wrap: break-word;
+        //overflow-wrap: break-word;
+        //word-break: break-word;
+    }
+
+    .emoji {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 3rem;
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+    }
 `
 
 export const EndpointSectionStyled = styled.section`

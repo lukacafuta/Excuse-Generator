@@ -27,6 +27,8 @@
     --color-background-dark: #2C2C2C;
     --color-output-tab-grey: #2C2C35;
     --gradient-background-turqoise: linear-gradient(169.5deg, rgba(217, 217, 217, 0.2) 9.18%, rgba(100, 219, 219, 0.2) 98.02%);
+    --gradient-background-excuse: linear-gradient(220.16deg, #5099DD 0%, #5640DA 42.05%, #439FB4 80.96%);
+
 
     /*Fonts*/
     --font-family-mono: 'IBM Plex Mono', monospace;
