@@ -10,12 +10,12 @@ export default function AboutMeSection() {
                     <img className="profile-photo" src="/luka-profile-photo.png" alt="profile photo"/>
                 </div>
                 <div className="about-me-text-linkedin">
-                    <p>
+                    <div className="text">
                         Experienced in the healthcare sector, administrative skills, and a strong customer focus.<br/>
                         In addition to solid computer science and programming knowledge (JavaScript, Python, SQL), I
                         have extensive experience in customer service and organization.<br/>
                         I speak fluent German and English.
-                    </p>
+                    </div>
                     <img src="/linkedin-logo.svg" alt="linkedin logo"/>
                 </div>
             </div>

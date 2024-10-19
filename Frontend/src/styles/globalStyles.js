@@ -16,7 +16,7 @@ export const HeaderStyled = styled.header`
     align-items: center;
     width: 100%;
     padding-top: 3.5rem;
-    
+
 
     .navbar {
         display: flex;
@@ -157,6 +157,8 @@ export const AboutMeSectionStyled = styled.section`
         display: flex;
         justify-content: center;
         align-items: start;
+        min-width: 173px;
+        height: 173px;
     }
 
     .profile-photo {
@@ -186,11 +188,12 @@ export const AboutMeSectionStyled = styled.section`
         flex-direction: column;
         //justify-content: center;
         align-items: start;
-    }
-
-    p {
         width: 306px;
         height: 272px;
+
+        .text {
+            margin-bottom: 1rem;
+        }
     }
 `
 

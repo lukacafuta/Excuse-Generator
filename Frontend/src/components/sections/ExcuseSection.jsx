@@ -6,7 +6,7 @@ export default function ExcuseSection() {
             <div className="excuse-content">
                 {/*<img src="/down-arrow.svg" alt="down-arrow"/> MOVED TO HERO*/}
                 <img src="/excuse.svg" alt="excuse"/>
-                <BigButtonStyled>New Excuse</BigButtonStyled>
+                <BigButtonStyled>New Excuse🥸</BigButtonStyled>
             </div>
         </ExcuseSectionStyled>
     )
