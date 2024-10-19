@@ -22,6 +22,9 @@ export const HeaderStyled = styled.header`
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        font-family: Nunito Sans, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
         gap: 2rem;
     }
 
@@ -71,7 +74,8 @@ export const BigButtonStyled = styled.button`
     background-color: var(--color-turqoise);
     border-radius: 8px;
     color: black;
-    font-size: 0.8rem;
+    font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
 `
 
@@ -99,13 +103,20 @@ export const EndpointSectionStyled = styled.section`
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 1.5rem;
     padding-bottom: 15.5rem;
 
     .endpoints-header {
         h2 {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0rem;
         }
+    }
+
+    .endpoints-subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--color-font-bright);
+        text-align: center;
+        margin-bottom: 1.5rem;
     }
 `
 
@@ -123,6 +134,9 @@ export const TabNavigationStyled = styled.div`
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        font-family: var(--font-family-poppins), system-ui, Avenir, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
 
         button {
             cursor: pointer;
@@ -140,6 +154,18 @@ export const TabContentStyled = styled.div`
     background-image: var(--dashed-border);
     padding: 1.5rem;
     gap: 0.5rem;
+
+    .description {
+        font-size: 12px;
+        font-weight: 400;
+        font-family: var(--font-family-poppins), system-ui, Avenir, Helvetica, Arial, sans-serif;
+    }
+
+    .endpoint {
+        font-size: 12px;
+        font-weight: 400;
+        font-family: var(--font-family-mono), monospace;
+    }
 `
 
 export const TabDatabaseOutputStyled = styled.div`
@@ -147,6 +173,9 @@ export const TabDatabaseOutputStyled = styled.div`
     background: var(--color-output-tab-grey);
     min-height: 277px;
     padding: 2rem;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--font-family-mono), monospace;
 `
 
 export const AboutMeSectionStyled = styled.section`
@@ -156,6 +185,18 @@ export const AboutMeSectionStyled = styled.section`
     align-items: center;
     width: 100%;
     padding-bottom: 15rem;
+
+    h2 {
+        margin-bottom: 0rem;
+    }
+
+    .about-me-subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--color-font-bright);
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
 
     .about-me-content {
         display: flex;
@@ -204,6 +245,10 @@ export const AboutMeSectionStyled = styled.section`
         height: 272px;
 
         .text {
+            font-size: 18px;
+            font-weight: 300;
+            color: var(--color-font-bright);
+            text-align: left;
             margin-bottom: 1rem;
         }
     }
