@@ -5,9 +5,8 @@ export default function ExcuseSection() {
         <ExcuseSectionStyled>
             <div className="excuse-content">
                 <div className="category">School</div>
-                <div className="dummy-excuse">My dog ate my homework.</div>
+                <div className="dummy-excuse">My dog ate my <br/> homework.</div>
                 <div className="emoji">🥸</div>
-                {/*<img src="/excuse.svg" alt="excuse"/>*/}
             </div>
             <BigButtonStyled>New Excuse</BigButtonStyled>
         </ExcuseSectionStyled>
