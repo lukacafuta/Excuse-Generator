@@ -24,6 +24,18 @@ export const HeaderStyled = styled.header`
         justify-content: space-between;
         gap: 2rem;
     }
+
+    .luca-logo {
+        display: flex;
+        justify-content: center;
+        width: 150px;
+    }
+
+    .github-logo {
+        display: flex;
+        justify-content: center;
+        width: 150px;
+    }
 `
 
 export const HeroSectionStyled = styled.section`
