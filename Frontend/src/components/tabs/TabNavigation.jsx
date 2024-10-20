@@ -7,9 +7,9 @@ export default function TabNavigation() {
                 <button>Get all Excuses</button>
                 <button>Get a single Excuse</button>
                 <button>Post an Excuse</button>
-                <button>Search for Excuses</button>
                 <button>Patch an Excuse</button>
                 <button>Delete an Excuse</button>
+                <button>Search for Excuses</button>
             </div>
             <div className="postman">
                 Postman logo
