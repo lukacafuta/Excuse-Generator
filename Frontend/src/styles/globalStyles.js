@@ -16,13 +16,28 @@ export const HeaderStyled = styled.header`
     align-items: center;
     width: 100%;
     padding-top: 3.5rem;
-    
+
 
     .navbar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        font-family: Nunito Sans, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
         gap: 2rem;
+    }
+
+    .luca-logo {
+        display: flex;
+        justify-content: center;
+        width: 150px;
+    }
+
+    .github-logo {
+        display: flex;
+        justify-content: center;
+        width: 150px;
     }
 `
 
@@ -59,7 +74,8 @@ export const BigButtonStyled = styled.button`
     background-color: var(--color-turqoise);
     border-radius: 8px;
     color: black;
-    font-size: 0.8rem;
+    font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
 `
 
@@ -71,14 +87,49 @@ export const ExcuseSectionStyled = styled.section`
     width: 100%;
     padding-bottom: 15.5rem;
     padding-top: 2.5rem;
+    gap: 1rem;
 
     .excuse-content {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+        //justify-content: space-between;
+        align-items: flex-start;
+        width: 419px;
+        height: 393px;
+        border-radius: 17px;
+        padding: 3rem;
+        position: relative;
+        background: var(--gradient-background-excuse);
     }
 
+    .category {
+        display: flex;
+        justify-content: flex-start;
+        font-family: var(--font-family-poppins), system-ui, Avenir, Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 7rem; // make it smaller to move excuses higher?
+    }
+
+    .dummy-excuse {
+        display: flex;
+        font-family: var(--font-family-poppins), system-ui, Avenir, Helvetica, Arial, sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        overflow: hidden;
+        //word-wrap: break-word;
+        //overflow-wrap: break-word;
+        //word-break: break-word;
+    }
+
+    .emoji {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 3rem;
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+    }
 `
 
 export const EndpointSectionStyled = styled.section`
@@ -87,13 +138,20 @@ export const EndpointSectionStyled = styled.section`
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 1.5rem;
     padding-bottom: 15.5rem;
 
     .endpoints-header {
         h2 {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0rem;
         }
+    }
+
+    .endpoints-subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--color-font-bright);
+        text-align: center;
+        margin-bottom: 1.5rem;
     }
 `
 
@@ -111,6 +169,9 @@ export const TabNavigationStyled = styled.div`
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        font-family: var(--font-family-poppins), system-ui, Avenir, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
 
         button {
             cursor: pointer;
@@ -128,6 +189,18 @@ export const TabContentStyled = styled.div`
     background-image: var(--dashed-border);
     padding: 1.5rem;
     gap: 0.5rem;
+
+    .description {
+        font-size: 12px;
+        font-weight: 400;
+        font-family: var(--font-family-poppins), system-ui, Avenir, Helvetica, Arial, sans-serif;
+    }
+
+    .endpoint {
+        font-size: 12px;
+        font-weight: 400;
+        font-family: var(--font-family-mono), monospace;
+    }
 `
 
 export const TabDatabaseOutputStyled = styled.div`
@@ -135,6 +208,9 @@ export const TabDatabaseOutputStyled = styled.div`
     background: var(--color-output-tab-grey);
     min-height: 277px;
     padding: 2rem;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--font-family-mono), monospace;
 `
 
 export const AboutMeSectionStyled = styled.section`
@@ -144,6 +220,18 @@ export const AboutMeSectionStyled = styled.section`
     align-items: center;
     width: 100%;
     padding-bottom: 15rem;
+
+    h2 {
+        margin-bottom: 0rem;
+    }
+
+    .about-me-subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--color-font-bright);
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
 
     .about-me-content {
         display: flex;
@@ -157,6 +245,8 @@ export const AboutMeSectionStyled = styled.section`
         display: flex;
         justify-content: center;
         align-items: start;
+        min-width: 173px;
+        height: 173px;
     }
 
     .profile-photo {
@@ -186,11 +276,16 @@ export const AboutMeSectionStyled = styled.section`
         flex-direction: column;
         //justify-content: center;
         align-items: start;
-    }
-
-    p {
         width: 306px;
         height: 272px;
+
+        .text {
+            font-size: 18px;
+            font-weight: 300;
+            color: var(--color-font-bright);
+            text-align: left;
+            margin-bottom: 1rem;
+        }
     }
 `
 

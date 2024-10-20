@@ -6,7 +6,7 @@ export default function EndpointSection() {
         <EndpointSectionStyled>
             <div className="endpoints-header">
                 <h2>Excuse Documentation</h2>
-                <h3>Crud your way through some excuses</h3>
+                <div className="endpoints-subtitle">Crud your way through some excuses</div>
             </div>
             <TabContainer/>
         </EndpointSectionStyled>
