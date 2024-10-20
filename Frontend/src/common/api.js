@@ -1,0 +1,1 @@
+export const baseUrl = "https://excuse-generator-api.herokuapp.com/api";

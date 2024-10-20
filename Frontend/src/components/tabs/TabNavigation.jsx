@@ -1,15 +1,15 @@
 import {TabNavigationStyled} from "../../styles/globalStyles.js";
+import dummyEndpoints from "../../common/dummyEndpoints.js";
+import TabNavigationItem from "./TabNavigationItem.jsx";
 
 export default function TabNavigation() {
+    const navItems = dummyEndpoints
+
     return (
         <TabNavigationStyled>
-            <div className="endpoints">
-                <button>Get all Excuses</button>
-                <button>Get a single Excuse</button>
-                <button>Delete an Excuse</button>
-                <button>Post an Excuse</button>
-                <button>Patch an Excuse</button>
-                <button>Search for Excuses</button>
+            <div className="endpoints">{navItems.map((item) => (
+                <TabNavigationItem key={item.id} item={item}/>
+            ))}
             </div>
             <div className="postman">
                 Postman logo
