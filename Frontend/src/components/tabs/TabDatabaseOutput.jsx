@@ -1,9 +1,10 @@
 import {TabDatabaseOutputStyled} from "../../styles/globalStyles.js";
 
-export default function TabDatabaseOutput() {
+export default function TabDatabaseOutput({tab}) {
+
     return (
         <TabDatabaseOutputStyled>
-            Database output
+            {tab.content}
         </TabDatabaseOutputStyled>
     )
 }

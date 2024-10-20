@@ -172,18 +172,22 @@ export const TabNavigationStyled = styled.div`
         font-family: var(--font-family-poppins), system-ui, Avenir, Helvetica, Arial, sans-serif;
         font-size: 12px;
         font-weight: 400;
+    }
+`
 
-        button {
-            cursor: pointer;
-            //outline: none;
-        }
+export const TabNavigationItemStyled = styled.div`
+    display: flex;
+    cursor: pointer;
+
+    .active {
+        color: var(--color-turqoise);
     }
 `
 
 export const TabContentStyled = styled.div`
     display: flex;
     flex-direction: column;
-    min-width: 696px;
+    width: 696px;
     min-height: 340px;
     border-radius: 12px;
     background-image: var(--dashed-border);

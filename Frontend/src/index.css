@@ -40,6 +40,15 @@
 
 }
 
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-turqoise);
+}
+
 body {
     display: flex;
     justify-content: center;

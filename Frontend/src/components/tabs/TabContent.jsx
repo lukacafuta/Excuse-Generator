@@ -1,16 +1,26 @@
 import {TabContentStyled} from "../../styles/globalStyles.js";
 import TabDatabaseOutput from "./TabDatabaseOutput.jsx";
+import dummyEndpoints from "../../common/dummyEndpoints.js";
+import {baseUrl} from "../../common/api.js";
 
-export default function TabContent() {
+export default function TabContent({tabID}) {
+    const tab = dummyEndpoints.find(tab => tab.id === tabID)
+
+    // if (tab) {
+    //     console.log(tab.id);
+    // } else {
+    //     console.log(`Endpoint with ID ${tabID} not found`);
+    // }
+
     return (
         <TabContentStyled>
             <div className="description">
-                Gotta get all of them excuses
+                {tab.description}
             </div>
             <div className="endpoint">
-                https://excuse-generator-api.herokuapp.com/api/excuse/
+                {baseUrl}{tab.endpoint}
             </div>
-            <TabDatabaseOutput/>
+            <TabDatabaseOutput tab={tab}/>
         </TabContentStyled>
     )
 }
