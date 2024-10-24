@@ -58,6 +58,7 @@ export const HeroSectionStyled = styled.section`
 
     h1 {
         padding-bottom: 0rem;
+        line-height: 1;
     }
 
     h2 {
@@ -108,15 +109,16 @@ export const ExcuseSectionStyled = styled.section`
         font-family: var(--font-family-poppins), system-ui, Avenir, Helvetica, Arial, sans-serif;
         font-size: 20px;
         font-weight: 600;
-        margin-bottom: 7rem; // make it smaller to move excuses higher?
+        margin-bottom: 2rem; // make it smaller to move excuses higher?
     }
 
-    .dummy-excuse {
+    .excuse {
         display: flex;
         font-family: var(--font-family-poppins), system-ui, Avenir, Helvetica, Arial, sans-serif;
         font-size: 28px;
         font-weight: 600;
         overflow: hidden;
+        line-height: 1.3;
         //word-wrap: break-word;
         //overflow-wrap: break-word;
         //word-break: break-word;
@@ -128,7 +130,7 @@ export const ExcuseSectionStyled = styled.section`
         font-size: 3rem;
         position: absolute;
         bottom: 1rem;
-        right: 1rem;
+        right: 3rem;
     }
 `
 

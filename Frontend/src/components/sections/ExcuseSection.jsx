@@ -15,7 +15,7 @@ export default function ExcuseSection() {
         <ExcuseSectionStyled>
             <div className="excuse-content">
                 <div className="category">{excuse.category}</div>
-                <div className="dummy-excuse">{excuse.excuse}</div>
+                <div className="excuse">{excuse.excuse}</div>
                 <div className="emoji">🥸</div>
             </div>
             <BigButtonStyled onClick={getRandomExcuse}>New Excuse</BigButtonStyled>
