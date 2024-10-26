@@ -109,7 +109,7 @@ export const ExcuseSectionStyled = styled.section`
         font-family: var(--font-family-poppins), system-ui, Avenir, Helvetica, Arial, sans-serif;
         font-size: 20px;
         font-weight: 600;
-        margin-bottom: 2rem; // make it smaller to move excuses higher?
+        margin-bottom: 2rem; // make it smaller to move excuses higher
     }
 
     .excuse {
@@ -140,6 +140,7 @@ export const EndpointSectionStyled = styled.section`
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-top: 2.5rem;
     padding-bottom: 15.5rem;
 
     .endpoints-header {
@@ -225,6 +226,7 @@ export const AboutMeSectionStyled = styled.section`
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-top: 2.5rem;
     padding-bottom: 15rem;
 
     h2 {

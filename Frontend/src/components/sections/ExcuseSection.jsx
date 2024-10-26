@@ -12,7 +12,7 @@ export default function ExcuseSection() {
     };
 
     return (
-        <ExcuseSectionStyled>
+        <ExcuseSectionStyled id="excuses">
             <div className="excuse-content">
                 <div className="category">{excuse.category}</div>
                 <div className="excuse">{excuse.excuse}</div>
