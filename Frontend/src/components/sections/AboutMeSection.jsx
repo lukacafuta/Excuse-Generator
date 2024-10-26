@@ -2,7 +2,7 @@ import {AboutMeSectionStyled} from "../../styles/globalStyles.js";
 
 export default function AboutMeSection() {
     return (
-        <AboutMeSectionStyled>
+        <AboutMeSectionStyled id="aboutme">
             <h2>About me</h2>
             <div className="about-me-subtitle">Hi, I am Luka - a Full Stack Dev</div>
             <div className="about-me-content">
