@@ -14,7 +14,13 @@ export default function Header() {
                 <a href="/#aboutme">ABOUT ME</a>
             </nav>
             <div className="github-logo">
-                <img src="/github-logo.svg" alt="Github logo"/>
+                <a
+                    href="https://github.com/lukacafuta"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src="/github-logo.svg" alt="Github logo"/>
+                </a>
             </div>
         </HeaderStyled>
     )
