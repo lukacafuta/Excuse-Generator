@@ -38,6 +38,14 @@ export const HeaderStyled = styled.header`
         display: flex;
         justify-content: center;
         width: 150px;
+
+        a {
+            transition: transform 0.3s ease;
+        }
+
+        a:hover {
+            transform: scale(1.2);
+        }
     }
 `
 
@@ -293,6 +301,14 @@ export const AboutMeSectionStyled = styled.section`
             color: var(--color-font-bright);
             text-align: left;
             margin-bottom: 1rem;
+        }
+
+        a {
+            transition: transform 0.3s ease;
+        }
+
+        a:hover {
+            transform: scale(1.2);
         }
     }
 `

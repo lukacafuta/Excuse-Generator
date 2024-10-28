@@ -15,7 +15,13 @@ export default function AboutMeSection() {
                         In addition to solid computer science and programming knowledge (JavaScript, Python, SQL), I
                         have extensive experience in customer service and organization.
                     </div>
-                    <img src="/linkedin-logo.svg" alt="linkedin logo"/>
+                    <a
+                        href="https://www.linkedin.com/in/luka-cafuta"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img src="/linkedin-logo.svg" alt="linkedin logo"/>
+                    </a>
                 </div>
             </div>
         </AboutMeSectionStyled>
