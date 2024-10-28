@@ -86,6 +86,11 @@ export const BigButtonStyled = styled.button`
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 `
 
 export const ExcuseSectionStyled = styled.section`
