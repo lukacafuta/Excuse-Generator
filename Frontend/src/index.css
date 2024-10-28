@@ -12,7 +12,7 @@
 }
 
 :root {
-    font-family: var(--font-family-poppins), system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: var(--font-family-nunito), sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
@@ -20,6 +20,8 @@
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     /*Colors*/
     --color-turqoise: #64DBDB;
@@ -58,7 +60,6 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: var(--font-family-nunito), sans-serif;
     position: relative;
     z-index: 1;
 }
