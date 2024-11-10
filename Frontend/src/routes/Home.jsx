@@ -7,6 +7,7 @@ import AboutMeSection from "../components/sections/AboutMeSection.jsx";
 import {HomeStyled} from "../styles/globalStyles.js";
 
 export default function Home() {
+
     return (
         <HomeStyled>
             <Header/>

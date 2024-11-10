@@ -6,6 +6,7 @@ import {useState} from "react";
 export default function ExcuseSection() {
     const [excuse, setExcuse] = useState(dummyExcuses[0]);
 
+
     const getRandomExcuse = () => {
         const randomIndex = Math.floor(Math.random() * dummyExcuses.length);
         setExcuse(dummyExcuses[randomIndex]);
