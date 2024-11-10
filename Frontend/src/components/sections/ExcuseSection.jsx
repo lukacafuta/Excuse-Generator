@@ -4,6 +4,7 @@ import {useState} from "react";
 
 
 export default function ExcuseSection() {
+
     const [excuse, setExcuse] = useState(dummyExcuses[0]);
 
 
