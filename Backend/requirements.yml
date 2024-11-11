@@ -1,0 +1,5 @@
+name: excuse_generator_backend
+dependencies:
+  - python
+  - pip:
+      - django
