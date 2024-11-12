@@ -11,9 +11,6 @@ export default function TabNavigation() {
                 <TabNavigationItem key={item.id} item={item}/>
             ))}
             </div>
-            <div className="postman">
-                Postman logo
-            </div>
         </TabNavigationStyled>
     )
 }
