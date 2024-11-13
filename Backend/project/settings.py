@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     "excuse",
     "category",
     "registration_profile",
+
+    # 3rd party
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
