@@ -11,10 +11,16 @@ class AuthorSerializer(serializers.ModelSerializer):    # could be done in the u
         fields = ['id', 'username']  # these are the fields that serializer will return
 
 
+class CategoryCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category      # this is the model serializer looks at
+        fields = ['id', 'category', 'author', 'excuses']  # these are the fields that serializer will return
+
+
 class CategorySerializer(serializers.ModelSerializer):
     excuses = ExcuseSerializer(many=True)   # nested serializer for 'excuses' for many-to-many relationship
     author = AuthorSerializer()            # nested serializer for 'author' for one-to-many relationship
 
     class Meta:
         model = Category      # this is the model serializer looks at
-        fields = ['id', 'name', 'author', 'excuses']  # these are the fields that serializer will return
+        fields = ['id', 'category', 'author', 'excuses']  # these are the fields that serializer will return
