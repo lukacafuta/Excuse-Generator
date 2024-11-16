@@ -17,16 +17,15 @@ class ListCreateCategoryView(GenericAPIView):
         return CategoryCreateSerializer
 
     def get(self, request, *args, **kwargs):
-        categories = Category.objects.all()
-        serializer = CategorySerializer(categories, many=True)
+        queryset = self.get_queryset()
+        serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data)
 
     def post(self, request, *args, **kwargs):
-        serializer = CategorySerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=201)
-        return Response(serializer.errors, status=400)
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save(author=request.user)
+        return Response(serializer.data, status=201)
 
 
 class RetrieveUpdateDeleteCategoryView(GenericAPIView):
