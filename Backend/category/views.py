@@ -3,7 +3,7 @@ from rest_framework.generics import GenericAPIView, ListAPIView, CreateAPIView, 
 from rest_framework.response import Response
 
 from category.models import Category
-from category.serializers import CategorySerializer, CategoryCreateSerializer
+from category.serializers import CategorySerializer
 
 
 # Create your views here.
