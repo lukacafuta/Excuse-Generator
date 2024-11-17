@@ -45,3 +45,15 @@ class AdminDeleteExcuseView(RetrieveUpdateDestroyAPIView):
     queryset = Excuse.objects.all()
     serializer_class = ExcuseSerializer
     permission_classes = [IsAdminUser]  # Restrict access to admins
+
+
+# like an excuse
+class LikeExcuseView(APIView):
+    def post(self, request, pk):
+        try:
+            excuse = Excuse.objects.get(pk=pk)
+            excuse.likes += 1  # increment the likes
+            excuse.save()
+            return Response({"message": "Excuse liked successfully!", "likes": excuse.likes}, status=200)
+        except Excuse.DoesNotExist:
+            return Response({"error": "Excuse not found."}, status=404)

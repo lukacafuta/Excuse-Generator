@@ -9,6 +9,11 @@ class ExcuseSerializer(serializers.ModelSerializer):
         model = Excuse      # this is the model serializer looks at
         fields = ['id', 'excuse_text', 'nickname', 'category', 'likes', 'created']  # these are the fields that serializer will return
 
+    def create(self, validated_data):
+        # prevent 'likes' from being set during creation
+        validated_data.pop('likes', None)
+        return super().create(validated_data)
+
     def validate_category(self, value):
         valid_categories = [choice[0] for choice in Excuse.CATEGORY_CHOICES]
         if value not in valid_categories:
