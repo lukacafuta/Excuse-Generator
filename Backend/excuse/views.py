@@ -6,6 +6,7 @@ from rest_framework.permissions import IsAdminUser
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+from category.models import Category
 from excuse.models import Excuse
 from excuse.serializers import ExcuseSerializer
 
@@ -29,9 +30,12 @@ class RetrieveUpdateDeleteExcusesView(RetrieveUpdateDestroyAPIView):
     queryset = Excuse.objects.all()
     serializer_class = ExcuseSerializer
 
+
 # fetch a random excuse by category
 class RandomExcuseView(APIView):
     def get(self, request, category):
+        if not Category.objects.filter(pk=category).exists():
+            return Response({"error": "Category not found."}, status=404)
         excuses = Excuse.objects.filter(category=category)
         if not excuses.exists():
             return Response({"error": "No excuses found in this category."}, status=404)

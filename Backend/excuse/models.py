@@ -2,24 +2,17 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.models import User
 from django.db import models
 
+from category.models import Category
+
+
 # User = get_user_model()
 
 # Create your models here.
 class Excuse(models.Model):
 
-    CATEGORY_CHOICES = [
-        ('work', 'Work'),
-        ('school', 'School'),
-        ('family', 'Family'),
-        ('friends', 'Friends'),
-        ('relationship', 'Relationship'),
-        ('coding', 'Coding'),
-        ('other', 'Other')
-    ]
-
     excuse_text = models.CharField(max_length=1000)     # excuse text
     nickname = models.CharField(max_length=50, blank=True, null=True)      # nickname of the user
-    category = models.CharField(max_length=20, choices=CATEGORY_CHOICES)        # predefined categories
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="excuses")        # linked to Category model
     likes = models.IntegerField(default=0)      # number of likes
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
