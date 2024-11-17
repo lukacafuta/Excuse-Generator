@@ -16,10 +16,28 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from drf_yasg import openapi
+from drf_yasg.views import get_schema_view
+from rest_framework import permissions
+
+schema_view = get_schema_view(
+    openapi.Info(
+        title="EXCUSE GENERATOR API",
+        default_version='v1',
+        description="In need of an excuse? We got you covered!",
+        terms_of_service="https://www.google.com/policies/terms/",
+        contact=openapi.Contact(email="luka.cafuta.dev@gmail.com"),
+        license=openapi.License(name="BSD License"),
+        ),
+    public=True,
+    permission_classes=(permissions.AllowAny,),
+)
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path('admin/', admin.site.urls),
 
     path('excuses/', include('excuse.urls')),
-    path('categories/', include('category.urls'))
+    path('categories/', include('category.urls')),
+
+    path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 ]
