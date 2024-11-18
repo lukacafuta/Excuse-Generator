@@ -1,6 +1,6 @@
 from django.contrib import admin
-
 from excuse.models import Excuse
+
 
 class ExcuseAdmin(admin.ModelAdmin):
     list_display = ['id', 'excuse_text', 'nickname', 'category', 'likes', 'created']  # display fields

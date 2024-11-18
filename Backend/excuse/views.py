@@ -1,11 +1,9 @@
 import random
-
 from django.shortcuts import render
 from rest_framework.generics import GenericAPIView, ListCreateAPIView, RetrieveUpdateDestroyAPIView
 from rest_framework.permissions import IsAdminUser
 from rest_framework.response import Response
 from rest_framework.views import APIView
-
 from category.models import Category
 from excuse.models import Excuse
 from excuse.serializers import ExcuseSerializer
@@ -44,7 +42,7 @@ class RandomExcuseView(APIView):
         return Response(serializer.data)
 
 
-# Admin-only delete view
+# admin-only delete view
 class AdminDeleteExcuseView(RetrieveUpdateDestroyAPIView):
     queryset = Excuse.objects.all()
     serializer_class = ExcuseSerializer

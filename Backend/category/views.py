@@ -1,7 +1,4 @@
-from django.shortcuts import render
-from rest_framework.generics import GenericAPIView, ListAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView
-from rest_framework.response import Response
-
+from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView
 from category.models import Category
 from category.serializers import CategorySerializer
 
@@ -13,12 +10,12 @@ class ListCategoriesView(ListAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
 
-# Create a new category (admin-only)
+# create a new category (admin-only)
 class CreateCategoryView(CreateAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
 
-# Retrieve, update, or delete a category (admin-only)
+# retrieve, update, or delete a category (admin-only)
 class RetrieveUpdateDeleteCategoryView(RetrieveUpdateDestroyAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer

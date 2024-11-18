@@ -1,7 +1,7 @@
 from django.urls import path
-
 from category.views import RetrieveUpdateDeleteCategoryView, ListCategoriesView, \
     CreateCategoryView
+
 
 urlpatterns = [
     path('', ListCategoriesView.as_view(), name='list_categories'),  # public endpoint to list categories
