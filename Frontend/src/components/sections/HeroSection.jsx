@@ -3,7 +3,7 @@ import {BigButtonStyled, HeroSectionStyled} from "../../styles/globalStyles.js";
 export default function HeroSection() {
 
     const scrollToExcuse = () => {
-        const excuseSection = document.getElementById("excuses"); // Get element by ID
+        const excuseSection = document.getElementById("excuses"); // get element by ID
         if (excuseSection) {
             excuseSection.scrollIntoView({behavior: "smooth"});
         }
