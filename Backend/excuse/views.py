@@ -41,6 +41,16 @@ class RandomExcuseView(APIView):
         serializer = ExcuseSerializer(random_excuse)
         return Response(serializer.data)
 
+# fetch random excuse across all categories
+class RandomExcuseAllCategoriesView(APIView):
+    def get(self, request):
+        excuses = Excuse.objects.all()  # get all excuses
+        if not excuses.exists():
+            return Response({"error": "No excuses found."}, status=404)
+        random_excuse = random.choice(excuses)
+        serializer = ExcuseSerializer(random_excuse)
+        return Response(serializer.data)
+
 
 # admin-only delete view
 class AdminDeleteExcuseView(RetrieveUpdateDestroyAPIView):
