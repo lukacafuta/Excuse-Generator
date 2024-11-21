@@ -15,7 +15,7 @@ export default function ExcuseSection() {
     // function to fetch a random excuse from the API
     const fetchExcuseRandom = async () => {
         try {
-            const response = await api.get('/excuses/random/4/');
+            const response = await api.get('/excuses/random/');
             const data = response.data;
 
             setExcuse({
