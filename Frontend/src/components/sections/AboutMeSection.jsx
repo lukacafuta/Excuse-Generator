@@ -1,5 +1,6 @@
 import {AboutMeSectionStyled} from "../../styles/globalStyles.js";
 
+
 export default function AboutMeSection() {
     return (
         <AboutMeSectionStyled id="aboutme">

@@ -1,6 +1,7 @@
 import {EndpointSectionStyled} from "../../styles/globalStyles.js";
 import TabContainer from "../tabs/TabContainer.jsx";
 
+
 export default function EndpointSection() {
     return (
         <EndpointSectionStyled id="documentation">

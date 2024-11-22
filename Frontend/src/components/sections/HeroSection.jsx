@@ -1,5 +1,6 @@
 import {BigButtonStyled, HeroSectionStyled} from "../../styles/globalStyles.js";
 
+
 export default function HeroSection() {
 
     const scrollToExcuse = () => {

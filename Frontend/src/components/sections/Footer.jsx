@@ -1,5 +1,6 @@
 import {FooterStyled, StackRectangleStyled} from "../../styles/globalStyles.js";
 
+
 export default function Footer() {
     return (
         <FooterStyled>
